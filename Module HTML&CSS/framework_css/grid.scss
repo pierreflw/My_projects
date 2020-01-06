@@ -1,0 +1,22 @@
+
+$breakpoints: ("xs": $xsMin,"sm": $smMin,"md": $mdMin,"lg": $lgMin);
+[class*='col-'] {
+  float: left;
+  padding-left: $marge;
+  padding-right: $marge;
+  width: 100%;
+}
+@each $container, $size in $breakpoints
+{
+  @media (min-width: #{$size})
+  {
+    @for $i from 1 through $gridsize
+    {
+      .col-#{$container}-#{$i}
+      {
+        width:  ( $i /$gridsize ) *100%;
+        flex:  ( $i /$gridsize ) *100% ;
+      }
+    }
+  }
+}

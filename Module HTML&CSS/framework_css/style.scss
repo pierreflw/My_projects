@@ -1,0 +1,418 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+}
+
+//container
+
+
+.container {
+  padding-right: $marge;
+  padding-left: $marge;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  padding-right: $marge;
+  padding-left: $marge;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width:$smMin) {
+  .container{
+    width:$sm-max;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width:$mdMin) {
+  .container{
+    width:$md-max;
+    max-width: 100%;
+  }
+}
+
+@media screen and(min-width:$lgMin) {
+  .container{
+    width:$lgMax;
+    max-width: 100%;
+  }
+}
+
+//row
+
+.row {
+  clear:both;
+  margin-right: $marge * -1;
+  margin-left: $marge * -1;
+}
+
+.col-xs-6 col-sm-6 col-md-12 col-lg-12{
+  color: lightgrey;
+}
+
+//titres
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.h1, .h2, .h3, h1, h2, h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.h1, h1{
+  font-size: 36px;
+}
+
+//buttons
+
+.btn{
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+@mixin changeColorButton($color, $background-color, $border-color){
+  color:$color;
+  background-color: $background-color;
+  border-color: $border-color;
+}
+
+@mixin changeSizeButton($padding, $font-size, $line-height, $border-radius){
+  padding: $padding;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+.btn-default{
+  @include changeColorButton($btn-default-color, $btn-default-background,$btn-default-border-color);
+}
+
+.btn-primary{
+  @include changeColorButton($btn-primary-color, $btn-primary-background, $btn-primary-border-color);
+  }
+
+.btn-success{
+  @include changeColorButton($btn-success-color, $btn-success-background, $btn-success-border-color);
+}
+
+.btn-info{
+  @include changeColorButton($btn-info-color, $btn-info-background, $btn-info-border-color)
+}
+
+.btn-warning{
+  @include changeColorButton($btn-warning-color, $btn-warning-background, $btn-warning-border-color)
+}
+
+.btn-danger{
+  @include changeColorButton($btn-danger-color, $btn-danger-background, $btn-danger-border-color)
+}
+
+.btn-link{
+  @include changeColorButton($btn-link-color, $btn-link-background, $btn-link-border-color)
+}
+
+.btn-lg{
+  @include changeSizeButton($btn-lg-padding, $btn-lg-font-size, $btn-lg-line-height, $btn-lg-border-radius)
+}
+
+.btn-sm{
+  @include changeSizeButton($btn-sm-padding, $btn-sm-font-size, $btn-sm-line-height, $btn-sm-border-radius)
+}
+
+.btn-xs{
+  @include changeSizeButton($btn-xs-padding, $btn-xs-font-size, $btn-xs-line-height, $btn-xs-border-radius)
+}
+
+.btn.active{
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+
+.btn-primary.active{
+  color: $btn-primary-color;
+  background-color: $btn-primary-background;
+  background-image: none;
+  border-color: $btn-primary-border-color;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn[disabled]{
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  opacity: .65;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+a.btn.disabled{
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  opacity: .65;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+//button:hover
+
+@mixin hoverBtn($color, $background, $border){
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+}
+
+@mixin hoverLink($color, $text, $background){
+  color: $color;
+  text-decoration: $text;
+  background: $background;
+}
+
+.btn-default:hover{
+  @include hoverBtn($hover-default-color, $hover-default-background, $hover-default-border);
+}
+
+.btn-primary:hover{
+  @include hoverBtn($hover-primary-color, $hover-primary-background, $hover-primary-border);
+}
+
+.btn-success:hover{
+  @include hoverBtn($hover-success-color, $hover-success-background, $hover-success-border);
+}
+
+.btn-info:hover{
+  @include hoverBtn($hover-info-color, $hover-info-background, $hover-info-border);
+}
+
+.btn-warning:hover{
+  @include hoverBtn($hover-warning-color, $hover-warning-background, $hover-warning-border);
+}
+
+.btn-danger:hover{
+  @include hoverBtn($hover-danger-color, $hover-danger-background, $hover-danger-border);
+}
+
+.btn-link:hover{
+  @include hoverLink($hover-link-color, $hover-link-text, $hover-link-background);
+}
+
+//images
+
+.col-xs-3{
+  width: 25%;
+  float: left;
+  padding-right: $marge;
+  padding-left: $marge;
+}
+
+.img-blur{
+  filter: blur(5px);
+}
+
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-rounded{
+  border-radius: 6px;
+}
+
+.img-circle{
+  border-radius: 50%;
+}
+
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+//text
+
+@mixin changeText($color){
+color: $color;
+}
+
+.text-muted{
+  @include  changeText($text-muted-color);
+}
+
+.text-primary{
+  @include  changeText($text-primary-color);
+}
+
+.text-success{
+  @include  changeText($text-success-color);
+}
+
+.text-info{
+  @include  changeText($text-info-color);
+}
+
+.text-warning{
+  @include  changeText($text-warning-color);
+}
+
+.text-danger{
+  @include  changeText($text-danger-color);
+}
+
+//bandes
+
+@mixin changeStripe($color, $background){
+  color: $color;
+  background: $background;
+}
+
+.bg-primary{
+  @include changeStripe($bg-primary-color, $bg-primary-background);
+}
+
+.bg-success{
+  @include changeStripe($bg-success-color, $bg-success-background);
+}
+
+.bg-info{
+  @include changeStripe($bg-info-color, $bg-info-background);
+}
+
+.bg-warning{
+  @include changeStripe($bg-warning-color, $bg-warning-background);
+}
+
+.bg-danger{
+  @include changeStripe($bg-danger-color, $bg-danger-background);
+}
+
+//alerts
+
+.alert{
+  padding: $marge;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+@mixin changeAlerts($color, $background, $border){
+color: $color;
+  background-color: $background;
+  border-color: $border;
+}
+
+.close{
+  float: right;
+  font-size:21px;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  color: #000;
+}
+
+button.close{
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: none;
+}
+
+.alert-dismissable .close,
+.alert-dismissible .close{
+  top: -2px;
+  right: -21px;
+  color: inherit;
+}
+
+.alert-success{
+  @include changeAlerts($alert-success_color, $alert-success_background, $alert-success-border);
+  .alert-link{
+    color: #2b542c;
+    font-weight: 700;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+.alert-info{
+  @include changeAlerts($alert-info_color, $alert-info_background, $alert-info-border);
+  .alert-link{
+    color: #245269;
+    font-weight: 700;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+.alert-warning{
+  @include changeAlerts($alert-warning-color, $alert-warning-background, $alert-warning-border);
+  .alert-link{
+    color: #66512C;
+    font-weight: 700;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+.alert-danger{
+  @include changeAlerts($alert-danger-color, $alert-danger-background, $alert-danger-border);
+  .alert-link{
+    color: #843534;
+    font-weight: 700;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+}

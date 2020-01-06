@@ -1,0 +1,123 @@
+//sass framework.scss framework.css --watch
+
+$btn-default-color: #333;
+$btn-default-background: #fff;
+$btn-default-border-color: #ccc;
+
+$btn-primary-color:#fff;
+$btn-primary-background: #337ab7;
+$btn-primary-border-color : #2e6da4;
+
+$btn-success-color:#fff;
+$btn-success-background:#5cb85c;
+$btn-success-border-color:#4cae4c;
+
+$btn-info-color:#fff;
+$btn-info-background:#5bc0de;
+$btn-info-border-color:#46b8da;
+
+$btn-warning-color:#fff;
+$btn-warning-background:#f0ad4e;
+$btn-warning-border-color:#eea236;
+
+$btn-danger-color:#fff;
+$btn-danger-background:#d9534f;
+$btn-danger-border-color:#d43f3a;
+
+$btn-link-color:#337ab7;
+$btn-link-background:transparent;
+$btn-link-border-color:transparent;
+
+$btn-lg-padding:10px 16px;
+$btn-lg-font-size:18px;
+$btn-lg-line-height:1.3333333;
+$btn-lg-border-radius:6px;
+
+$btn-sm-padding:5px 10px;
+$btn-sm-font-size:12px;
+$btn-sm-line-height:1.5;
+$btn-sm-border-radius:3px;
+
+$btn-xs-padding:1px 5px;
+$btn-xs-font-size:12px;
+$btn-xs-line-height:1.5;
+$btn-xs-border-radius:3px;
+
+$hover-default-color: #333;
+$hover-default-background:#e6e6e6;
+$hover-default-border: #adadad;
+
+$hover-primary-color: #fff;
+$hover-primary-background:#286090;
+$hover-primary-border: #204d74;
+
+$hover-success-color: #fff;
+$hover-success-background:#449d44;
+$hover-success-border: #398439;
+
+$hover-info-color: #fff;
+$hover-info-background:#31b0d5;
+$hover-info-border: #269abc;
+
+$hover-warning-color: #fff;
+$hover-warning-background:#ec971f;
+$hover-warning-border: #d58512;
+
+$hover-danger-color: #fff;
+$hover-danger-background:#c9302c;
+$hover-danger-border: #ac2925;
+
+$hover-link-color: #23527c;
+$hover-link-background:transparent;
+$hover-link-text: underline;
+
+$text-muted-color:#777;
+$text-primary-color:#337ab7;
+$text-success-color:#3c763d;
+$text-info-color:#31708f;
+$text-warning-color:#8a6d3b;
+$text-danger-color:#a94442;
+
+$bg-primary-color:#fff;
+$bg-primary-background:#337ab7;
+
+$bg-success-color:#000000;
+$bg-success-background:#dff0d8;
+
+$bg-info-color:#000000;
+$bg-info-background:#d9edf7;
+
+$bg-warning-color:#000000;
+$bg-warning-background:#fcf8e3;
+
+$bg-danger-color:#000000;
+$bg-danger-background:#f2dede;
+
+$alert-success_color:#3c763d;
+$alert-success-background:#dff0d8;
+$alert-success-border:#d6e9c6;
+
+$alert-info-color:#31708f;
+$alert-info-background:#d9edf7;
+$alert-info-border:#bce8f1;
+
+$alert-warning-color:#8a6d3b;
+$alert-warning-background:#fcf8e3;
+$alert-warning-border:#faebcc;
+
+$alert-danger-color:#a94442;
+$alert-danger-background:#f2dede;
+$alert-danger-border:#ebccd1;
+
+$gridsize: 12;
+$xsMin : 0px;
+$smMin : 768px;
+$mdMin : 992px;
+$lgMin : 1200px;
+$xsMax : 767px;
+$smMax : 991px;
+$mdMax : 1199px;
+$sm-max : 750px;
+$md-max : 970px;
+$lgMax : 1170px;
+$marge : 15px;

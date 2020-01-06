@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maquette responsive</title>
+    <link rel="stylesheet" media="screen" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="media.css" type="text/css"/>
+</head>
+<body>
+<div class="social_header">
+    <div class="social_media">
+        <a href="https://www.facebook.com/" title="Follow us on Facebook !" id="facebook"></a>
+        <a href="https://twitter.com/" title="Follow us on Twitter !" id="twitter"></a>
+    </div>
+</div>
+<div class="nav_bar">
+    <div class="nav_logo">
+        <a href="#" title="Go back to home"><img id="logo" src="assets/18.jpg.png" alt="logo safy"/> </a>
+    </div>
+    <ul class="list">
+        <li><a href="#" title="Go to Home">Home</a></li>
+        <li id="dropdown2"><a href="#" title="Go to Book">Book<i></i>
+            <ul class="sublist_book">
+                <li>L'Alchimiste</li>
+                <li>Da vinci Code</li>
+                <li>Harry Potter</li>
+            </ul>
+        </a></li>
+        <li id="dropdown"><a href="#" title="Go to destinations">Destinations<i></i>
+            <ul class="sublist">
+                <li>France</li>
+                <li>Brazil</li>
+                <li>Algeria</li>
+            </ul>
+        </a></li>
+        <li><a href="#" title="Go to prices">Prices</a></li>
+        <li><a href="#" title="Go to alerts">Alerts</a></li>
+        <li><a href="#" title="Go to contact">Contact</a></li>
+    </ul>
+</div>
+<div class="slideshow-container">
+
+    <div class="mySlides">
+        <img src="assets/6.jpg" alt="photo voyage">
+        <div class="text">Tips to travel around the world !</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="assets/7.jpg" alt="photo champs">
+        <div class="text">balade dans les champs</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="assets/8.jpg" alt="photo escalade">
+        <div class="text">escalade</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="assets/9.jpg" alt="photo de photographe">
+        <div class="text">Photographie</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="assets/10.jpg" alt="photo de photo">
+        <div class="text">voyages</div>
+    </div>
+
+    <div class="mySlides">
+        <img src="assets/11.jpg" alt="photo plongée">
+        <div class="text">Plongée</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div id="button" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+
+<div class="container1">
+    <div class="description">
+        <article>
+            <div class="fire">
+                <img src="assets/13.png" id="fire2" alt="fire">
+                <h3>Safe, structured and amazing application</h3>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quesque id ligula in ipsum vulputate volutpat
+                at ut nisi. Aliquam erat volutpat. Maecenas pretium dolor vitae lectus fermentum convallis bibendum in
+                erat. Donec vitae risus non lorem volutpat fringilla in in metus. Aenean quis eros diam. Proin porta
+                quam at neque congue iaculis</p>
+            <a href="#" title="See more">more info</a>
+        </article>
+        <article>
+            <div class="fire">
+                <img src="assets/17.png" alt="tent">
+                <h3>The sun is shining today, book your trip</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quesque id ligula in ipsum vulputate volutpat
+                at ut nisi. Aliquam erat volutpat. Maecenas pretium dolor vitae lectus fermentum convallis bibendum in
+                erat. Donec vitae risus non lorem volutpat fringilla in in metus. Aenean quis eros diam. Proin porta
+                quam at neque congue iaculis</p>
+            <a href="#" title="See more">more info</a>
+        </article>
+        <article>
+            <div class="fire">
+                <img src="assets/12.png" alt="paw">
+                <h3>Meet new people and live more intensely</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quesque id ligula in ipsum vulputate volutpat
+                at ut nisi. Aliquam erat volutpat. Maecenas pretium dolor vitae lectus fermentum convallis bibendum in
+                erat. Donec vitae risus non lorem volutpat fringilla in in metus. Aenean quis eros diam. Proin porta
+                quam at neque congue iaculis</p>
+            <a href="#" title="See more">more info</a>
+        </article>
+    </div>
+    <div class="destination">
+        <div class="flag">
+            <h2>Destinations</h2>
+            <div class="espace"></div>
+            <table id="tableau">
+                <tr>
+                    <th><img src="./assets/3.jpg" alt="France"></th>
+                    <th><img src="./assets/4.jpg" alt="Brésil"></th>
+                    <th><img src="./assets/5.jpg" alt="Algérie"></th>
+                </tr>
+                <tr>
+                    <td>France</td>
+                    <td>Brazil</td>
+                    <td>Algeria</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="container2">
+    <div class="content">
+        <div class="about_us">
+            <h3>About us</h3>
+            <div class="espace2"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis urna a enim convallis a
+                bidendum lectus scelerisque. Aenean at mauris augue, sed fringilla justo. Proin et porta ligula.Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis urna a enim convallis a bidendum
+                lectus scelerisque. Aenean at mauris augue, sed fringilla justo. Proin et porta ligula.</p><br/>
+            <p> Quisque malesuada lorem at leo volutpat tristique. Nunc sit amet felis imperdiet ante tincidunt viverra
+                sit amet quis ipsum. Aenean mutus urna, placerat ut pharetra id, pharetra eget turpis. Sed blandit nunc
+                eget lorem vestibulum malesuadra. Lorem ipsum dolor sit amet, consectur adipiscing elit. Phasellus
+                convallis urna a enim convallis a bibendum lectus scelerisque. Aenean at mauris augue, sed fringilla
+                justo. PRoin et porta ligula. Quisque malesuada lorem at leo volutpat tristique. Nunc sit amet felis
+                imperdiet ante tincidunt viverra sit amet quis ipsum.</p>
+        </div>
+
+        <div class="img_with_txt">
+            <h3>Why us</h3>
+            <div class="espace3"></div>
+            <div class="img_line1">
+                <img src="assets/14.png" alt="photo_compass">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phasellus convallis urna a enim convallis a
+                    bibendum<br/>lectus scelerisque. Aenean at mauris augue, sed fringilla justo.</p>
+            </div>
+            <div class="img_line2">
+                <img src="assets/15.png" alt="photo_map">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phasellus convallis urna a enim convallis a
+                    bibendum<br/>lectus scelerisque. Aenean at mauris augue, sed fringilla justo.</p>
+            </div>
+            <div class="img_line3">
+                <img src="assets/16.png" alt="photo_velo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Phasellus convallis urna a enim convallis a
+                    bibendum<br/>lectus scelerisque. Aenean at mauris augue, sed fringilla justo.</p>
+            </div>
+        </div>
+    </div>
+    <div class=travel>
+        <h3>How to travel</h3>
+        <div class="espace4"></div>
+        <div class="txt_with_button">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus convallis urna a enim convallis a
+                bidendum lectus scelerisque.<br> Aenean at mauris augue, sed fringilla justo. Proin et porta ligula</p>
+            <input type="submit" value="Subscribe"/>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <ul>
+        <li><a href="#" title="Go to Home">Home</a></li>
+        <li><a href="#" title="Go to Book">Book</a></li>
+        <li><a href="#" title="Go to destinations">Destinations</a></li>
+        <li><a href="#" title="Go to prices">Prices</a></li>
+        <li><a href="#" title="Go to alerts">Alerts</a></li>
+        <li><a href="#" title="Go to contact">Contact</a></li>
+    </ul>
+    <span>© There is no birds here Look around.</span>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
