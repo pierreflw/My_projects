@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    color: #00093f;
+}
+
+
+
+.content a{
+    text-decoration: none;
+
+}
+
+.content img{
+    width: 25%;
+    height: 25%;
+}
+
+.stripe{
+    background-color:#00093f;
+}
+
+.stripe img{
+    height:7%;
+    width:7%;
+
+}
+
+.content h1{
+    float: right;
+    margin-right: 440px;
+    margin-top: 110px;
+    text-align: center;
+    border: 7px solid #00093f;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.navBar{
+    background-color: #00093f;
+}
+
+#film{
+    border: 2px solid #00578e;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+#seance{
+    border: 2px solid #00578e;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+#admin{
+    border: 2px solid #00578e;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.header a:hover{
+    background-color: white;
+}
+
+body{
+    background-color: cornflowerblue;
+}
+
+label{
+    color: white;
+    position: relative;
+    bottom: 25px;
+    left: 90px;
+    font-size: 1.2em;
+}
+
+input::placeholder{
+    color: #478bf9;
+}
+
+
+.navBar{
+    height: 80px;
+}
+
+input{
+    box-shadow:1px 1px 4px black;
+    border-radius: 7px;
+}
+
+form{
+    font: bold 13px Arial;
+    padding-top: 28px;
+    margin-left: 260px;
+}
+
+.sub {
+    padding: 6px 0 6px 0;
+    font: bold 13px Arial;
+    background: #478bf9;
+    color: #fff;
+    border-radius: 2px;
+    width: 100px;
+    border: none;
+    margin-top: 4px;
+    box-shadow:1px 1px 4px black;
+}
+
+.sub:hover{
+    color: #478bf9;
+    background-color: white;
+}
+
+.insert{
+    text-align: center;
+    background-color: #00093f;
+    color: #fff;
+    width: 50%;
+    margin-left: 26%;
+    margin-top: 50px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px black;
+}
+
+.menu{
+text-align: center;
+    font-size: 1.3em;
+}
+
+.menu a {
+    color: white;
+    position: relative;
+    bottom: 25px;
+    padding: 4px;
+    margin-right: 80px;
+}
+
+.menu a:hover {
+    background-color: #478bf9;
+    border-radius: 2px;
+    padding: 7px;
+}
