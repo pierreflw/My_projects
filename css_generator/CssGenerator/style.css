@@ -1,0 +1,29 @@
+.sprite {
+	display: inline-block;
+	background: url('Sprite.png') no-repeat;
+}
+.sprite-image3{
+	background-position: -0px;
+	width: 970px;
+	height: 545px;
+}
+.sprite-image2{
+	background-position: -970px;
+	width: 640px;
+	height: 905px;
+}
+.sprite-image5{
+	background-position: -1610px;
+	width: 1006px;
+	height: 1006px;
+}
+.sprite-image1{
+	background-position: -2616px;
+	width: 500px;
+	height: 626px;
+}
+.sprite-image4{
+	background-position: -3116px;
+	width: 378px;
+	height: 378px;
+}
