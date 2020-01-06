@@ -1,0 +1,65 @@
+ #body{
+ 	margin: 0;
+ 	padding: 0;
+ 	background-color: #BDBDBD;
+ }
+
+.navbar-header h1{
+	margin-top: 25%;
+	font-size: 18px;
+	color: #2d46ff;
+	font-weight: bold;
+}
+
+ul{
+	display: flex;
+}
+
+ul li{
+	margin-left: 20%;
+}
+
+#crayon, #eraser, #trait, #circle, #square{
+	height: 40px;
+	margin-top: 10%;
+}
+
+.canvas{
+	margin-top: 5%;
+	margin-left: 8%;
+}
+
+ #myCanvas{
+ 	border:1px solid #000000;
+ 	border-radius: 4px;
+ 	background-color: #fff;
+ }
+
+ #settings{
+ 	width: 30%;
+ 	height: 685px;
+ 	float: right;
+ 	margin-top: -1.5%;
+ 	background-color: #fff;
+ }
+
+#divSize{
+	display: flex;
+}
+
+.valueSize{
+	margin-left: 5%;
+}
+
+#divSize, #divFilling, #divColor, #divSave, #divFile, #divReset{
+	margin-top: 15%;
+	margin-left: 5%;
+}
+
+#divSize input, #divFilling input, #divColor input{
+	margin-left: 5%;
+}
+
+#largeur{
+	width: 60%;
+}

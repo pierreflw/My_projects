@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>My_paint</title>
+</head>
+<body id="body">
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <h1>My_Paint</h1>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#">Outils</a></li>
+	      <li><button id="crayon" class="btn btn-primary"><img src="../img/brush.png"></button></li>
+	      <li><button id="eraser" class="btn btn-primary"><img src="../img/eraser.png"></button></li>
+	      <li><button id="trait" class="btn btn-primary"><img src="../img/line.png"></button></li>
+	      <li><button id="circle" class="btn btn-primary"><img src="../img/circle.png"></button></li>
+	      <li><button id="square" class="btn btn-primary"><img src="../img/square.png"></button></li>
+	    </ul>
+	  </div>
+	</nav>
+
+  	<div id="settings">
+  		<div id="divSize">
+			<label>Taille :</label> <span class="valueSize">1</span><input type="range" min="1" max="50" value="5" id="largeur" /><span class="valueSize">50</span>
+		</div>
+		<div id="divFilling">
+			<label for="fill">Remplir</label><input type="checkbox" name="fill" id="fill">
+		</div>
+		<div id="divColor">
+			<label>Couleur</label><input type="color" id="color">
+		</div>
+		<div id="divReset">
+			<button onclick="window.location.reload()" class="btn btn-primary"><img src="../img/settings.png"></button>
+		</div>
+		<div id="divFile">
+			<input id="file" type="file">
+		</div>
+		<div id="divSave">
+			<button id="save" class="btn btn-primary"><img src="../img/save.png"></button>
+		</div>
+  	</div>
+  	<div class="canvas">
+		<canvas id="myCanvas" width="800" height="500"></canvas>
+  	</div>
+
+	<script type="text/javascript" src="
+	../js/script.js"></script>
+
+</body>
+</html>
